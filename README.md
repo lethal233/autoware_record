@@ -170,7 +170,7 @@ def read_filter():
         print("{}, {}, {}".format(topic, type(message), t))
 ```
 
-#### Speed up Read
+#### Speed up Read (Recommended)
 
 Since deserialization is a time-consuming operation, you can speed up the reading process by setting the `interested_topics` parameter.
 
