@@ -176,6 +176,8 @@ Since deserialization is a time-consuming operation, you can speed up the readin
 
 If the topic is not in the `interested_topics`, the message will not be deserialized.
 
+https://github.com/lethal233/autoware_record/blob/4a1d722a8daf616330194fe63a1faaedb62602d7/autoware_record/record.py#L77
+
 ```python
 from autoware_record.record import Record
 
