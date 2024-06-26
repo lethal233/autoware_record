@@ -150,11 +150,3 @@ class Record:
         if len(files) == 0:
             raise Exception(f"No {extension} files found in {f}")
         return files[0]
-
-
-if __name__ == '__main__':
-    file_name = "/home/lori/Downloads/sample-rosbag/"
-    record = Record(file_name)
-    for topic, message, t in record.read_messages('/vehicle/status/gear_status',
-                                                  start_time=1614315746865701308, end_time=1614315776212543503):
-        print("{}, {}, {}".format(topic, type(message), t))
